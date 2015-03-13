@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Noserv To-Dos</title>
+
+        <!-- CSS -->
+        <link href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="./css/todos.css" rel="stylesheet" media="screen">
+
+        <!-- Javascript -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script src="js/noserv.js"></script>
+        <script src="js/tutorial_todos.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
+    </head>
+
+    <header>
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h1>NoServe To-Dos</h1>
+
+            </div>
+            <div class="col-md-12 text-right padding5050">
+                <!--<button type="button" class="btn btn-success btn-sm">Logout</button>-->
+            </div>
+        </div>
+    </header>
+    <body class="todos_body">
+        <div class="dialog-message" id='dig_div'>
+            <p id="dig_p"></p>
+        </div>
+        <div class="container">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 box_shaow_line">
+                <div>
+                <!--<form role="form">-->
+                    <div class="form-group">
+                        <label><h3>Log In</h3></label>
+                        <input type="text" class="form-control margin5050" id="to_user_lg_id" placeholder="Id">
+                        <input type="password" class="form-control margin5050" id="to_user_lg_pw" placeholder="Password">
+                    </div>
+                    <button class="btn btn-default" onclick="todos_login(); return false;">Log In</button>
+                <!--</form>-->
+
+                <!--<form role="form">-->
+                    <div class="form-group">
+                        <label><h3>Sign Up</h3></label>
+                        <input type="text" class="form-control margin5050" id="to_user_sg_id" placeholder="Id">
+                        <input type="password" class="form-control margin5050" id="to_user_sg_pw" placeholder="Create a Password">
+                    </div>
+                    <button class="btn btn-default" onclick="todos_signupchk(); return false;">Sign Up</button>
+                <!--</form>-->
+                </div>
+                <br />
+                <!--<div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    Signup Completed.<br />  Welcome to Noserv. To-Dos<br/>
+                    <button>Close</button>
+                </div>-->
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <br /><br />
+    </body>
+    <footer>
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <p class="margin10px">
+                    Powered by <a href="/">No Serv</a> using th <a href="/page_develop_javascript">JavaScript SDK.</a><br />
+                    Learn how we built it in the <a href="/page_develop_tutorial">Tutorial.</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</html>
