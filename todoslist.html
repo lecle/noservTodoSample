@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +15,7 @@
 
         <!-- Javascript -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!--<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>-->
+        <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
         <script src="js/noserv.js"></script>
         <script src="js/tutorial_todos.js"></script>
 
@@ -25,14 +24,11 @@
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
         <![endif]-->
-
     </head>
-
     <header>
         <div class="container">
             <div class="col-md-12 text-center">
                 <h1>NoServe To-Dos</h1>
-
             </div>
             <div class="col-md-12 text-right padding5050">
                 <button type="button" class="btn btn-success btn-sm" onclick="todos_logout(); return false;">Logout</button>
@@ -40,11 +36,8 @@
         </div>
     </header>
     <body class="todoslist_body">
-        <div class="dialog-message" id='dig_div_list'>
-            <p id="dig_p_list"></p>
-        </div>
         <div class="container">
-            <div id="todoapp" class="box_shaow_line">
+            <div class="box_shaow_line todoapp">
                 <header>
                     <input id="new-todo" class="color_border_input" type="text" placeholder="Write a New To-Do">
                 </header>
@@ -52,12 +45,7 @@
                     <ul id='todo-list' class="color_text">
                     </ul>
                 </section>
-                <footer> <a id="clear-completed">Clear completed</a>
-                    <div id='todo-count'></div>
-                </footer>
             </div>
-            <script src="/noserv/noserv.js"></script>
-            <script src="js/tutorial_todos.js"></script>
         </div>
     </body>
 </html>
